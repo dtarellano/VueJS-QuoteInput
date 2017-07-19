@@ -23,7 +23,9 @@ export default {
    methods: {
       pushQuote(input) {
          if (this.bar >= 10) {
-            alert("You Cannot Exceed more than 10 Quotes");
+            alert(
+               "You Cannot Exceed more than 10 Quotes, Please Delete a quote in order to add a new one."
+            );
             this.bar = 10;
             return;
          }
